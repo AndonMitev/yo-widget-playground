@@ -80,7 +80,7 @@ export default function Home() {
         </div>
 
         {/* Main content grid */}
-        <section className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-5 flex-1">
+        <section className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-5 items-start">
           {/* Widget preview frame */}
           <div className="flex flex-col gap-2">
             <div className="flex items-center justify-between">
@@ -89,7 +89,7 @@ export default function Home() {
                 {mode === 'embedded' ? 'Embedded mode' : 'Launcher mode'}
               </span>
             </div>
-            <div className="yo-panel rounded-3xl flex-1 min-h-[540px] flex flex-col overflow-hidden">
+            <div className="yo-panel rounded-3xl min-h-[540px] flex flex-col overflow-hidden">
               {mode === 'embedded' ? (
                 <div className="flex-1 flex">
                   <YoWidget
